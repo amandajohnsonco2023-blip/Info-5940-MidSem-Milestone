@@ -7,7 +7,7 @@ Margins is a web platform where students in the same course pool their lecture n
 ## Team
 
 Nancy Khosla, nk549
-| [Full name] | [netid] |
+| Amanda Johnson | alj73 |
 | [Full name] | [netid] |
 | [Full name] | [netid] |
 
