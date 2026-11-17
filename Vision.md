@@ -4,7 +4,7 @@
 
 ### Summary
 
-Margins is a locally run web platform where students in the same course pool their lecture notes, and an AI agent turns that shared pool into a study guide grounded in the course itself. The agent reads every set of notes uploaded to a class, compares them against the course syllabus and schedule, and produces a study guide that merges overlapping notes, flags disagreements between notes, and points out lectures that nobody has covered. Professors and TAs can endorse notes, and the agent weights endorsed and highly rated notes more heavily, both when building guides and when answering questions in a chat that cites its sources.
+Margins is a locally run web platform where students in the same course pool their lecture notes, and an AI agent turns that shared pool into a study guide grounded in the course itself. The agent reads every set of notes uploaded to a class, fetches the public course website to compare them against the syllabus and schedule, and produces a study guide that merges overlapping notes, flags disagreements between notes, and points out lectures that nobody has covered. Professors and TAs can endorse notes, and the agent weights endorsed and highly rated notes more heavily, both when building guides and when answering questions in a chat that cites its sources.
 
 ### The problem
 
@@ -35,7 +35,7 @@ The initial audience is students at a university taking lecture-based courses (t
 Each feature must work end to end the way a real user would need it, not as a stub.
 
 1. **Accounts and roles.** Simple local accounts. A user can create or join a course and has a role of student or instructor. Role determines who can endorse notes.
-2. **Course structure from syllabus and schedule.** An instructor or student adds the syllabus and schedule as pasted text or an uploaded file (text, Markdown, or text-based PDF). The agent extracts a lecture-by-lecture outline (number, date, title, topics) and the user can review and correct it.
+2. **Course structure from the public course website.** An instructor or student enters the URL of the course's public website. The agent fetches and parses the site (syllabus, schedule, and linked lecture materials) and extracts a lecture-by-lecture outline (number, date, title, topics), which the user can review and correct. The site is fetched again only when a user asks to refresh it.
 3. **Notes upload and assignment.** Students upload typed notes (Markdown, plain text, or text-based PDF). The system proposes which lecture each note covers; the uploader can confirm or change it.
 4. **Ratings and endorsements.** Students can rate other students' notes. Instructors can endorse a note. Endorsements and ratings combine into a quality weight stored per note.
 5. **Weighted retrieval.** Notes are split into passages and indexed with embeddings. Retrieval combines semantic relevance with the note's quality weight, so endorsed and highly rated notes rank higher.
@@ -44,12 +44,12 @@ Each feature must work end to end the way a real user would need it, not as a st
    - flags disagreements, showing each version with its source,
    - reports lectures on the schedule that have no notes or thin coverage,
    - cites the source note for every claim.
-7. **Cited chat (agentic).** A chat where students ask questions about the course. The agent retrieves from the pooled notes, answers with citations, and says so plainly when the notes do not support an answer.
+7. **Cited chat (agentic).** A chat where students ask questions about the course. The agent searches the pooled notes and the fetched course site, answers with citations, and says so plainly when the notes do not support an answer.
 8. **Instructor coverage view.** A simple view showing, per lecture, how many notes exist, which are endorsed, and where conflicts were flagged.
 
 ### Agentic behavior
 
-The study guide and chat features use an agent that chooses its own steps and calls tools, rather than a single prompt. Planned tools include: `parse_schedule`, `list_notes_for_lecture`, `retrieve_passages`, `compare_passages`, `find_coverage_gaps`, and `cite_source`. The agent decides which tools to call, in what order, and when it has enough evidence.
+The study guide and chat features use an agent that chooses its own steps and calls tools, rather than a single prompt. Planned tools include: `fetch_course_site`, `parse_schedule`, `list_notes_for_lecture`, `retrieve_passages`, `compare_passages`, `find_coverage_gaps`, and `cite_source`. The agent decides which tools to call, in what order, and when it has enough evidence.
 
 ### Planned models
 
@@ -62,7 +62,8 @@ These are good ideas that we are deliberately leaving for later so the MVP stays
 - University single sign-on or production-grade authentication and authorization
 - OCR of handwritten notes, photographed whiteboards, or scanned PDFs
 - Audio or video lecture transcription
-- Automatically scraping or syncing a live course website (syllabus and schedule are provided as text or a file)
+- Course sites that require login, such as Canvas or other learning management systems (we demo with one or two courses whose websites are public)
+- Continuous or scheduled syncing of a course website (the site is fetched when added and when a user asks for a refresh)
 - Multiple courses in a single study guide, or cross-course search
 - Quizzes, flashcards, and spaced-repetition features generated from the guide
 - Real-time collaborative editing of notes
@@ -83,3 +84,4 @@ These are questions the team wants to settle, and some may be answered during AI
 6. **Instructor involvement.** In practice, instructors may not endorse anything. What does the product do when no endorsements exist, and should students be able to flag notes as "instructor-verified" through some other route?
 7. **Privacy and sharing.** Should uploaded notes be visible to all students in the course by default, and should uploaders be able to withhold their name?
 8. **Evaluation.** How will we know the guide is good? We plan a small test set (real notes from a course, with known gaps and conflicts planted) to check that the agent finds them.
+9. **Course site variety.** Public course websites differ a lot in structure. How should the agent handle a site where it cannot find a clear schedule, and how much should the user have to correct by hand?
