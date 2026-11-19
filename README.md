@@ -6,10 +6,11 @@ Margins is a web platform where students in the same course pool their lecture n
 
 ## Team
 
-Nancy Khosla, nk549
-| Amanda Johnson | alj73 |
-| Ram Vaidya | rmv42 |
-| [Full name] | [netid] |
+Nancy Khosla (nk549),
+Amanda Johnson (alj73), 
+Ram Vaidya (rmv42), 
+Namra Shah (nns33),
+Anushka Vijay (asv48)
 
 **Coding agent:** [Claude Code] <!-- TODO: list every agent your team uses -->
 **AI-DLC version:** v1.0.1
