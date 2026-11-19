@@ -5,7 +5,7 @@
 - **Project Type**: Greenfield
 - **Start Date**: 2026-11-19T17:32:00Z
 - **Current Phase**: INCEPTION
-- **Current Stage**: INCEPTION - User Stories, Part 2 Generation complete (awaiting approval of stories and personas)
+- **Current Stage**: INCEPTION - Workflow Planning (awaiting approval)
 
 ## Input Documents
 - `README.md` - problem, planned LLM integration, scope, team
@@ -32,18 +32,34 @@
 | Resiliency Baseline | No | Requirements Analysis |
 | Property-Based Testing | Yes (full enforcement, PBT-01 to PBT-10) | Requirements Analysis |
 
+## Execution Plan Summary
+- **Total Stages**: 13 (7 Inception, 6 Construction) plus the Operations placeholder
+- **Stages to Execute**: Application Design; Units Generation; per unit: Functional Design, NFR Requirements and NFR Design (units with LLM, fetching, auth or upload work), Code Generation; then Build and Test
+- **Stages to Skip**: Reverse Engineering (greenfield); Infrastructure Design (local only, SQLite, no cloud)
+
 ## Stage Progress
 ### 🔵 INCEPTION PHASE
 - [x] Workspace Detection
 - [-] Reverse Engineering (SKIPPED - greenfield)
 - [x] Requirements Analysis (approved)
-- [ ] User Stories (IN PROGRESS - stories.md and personas.md generated, awaiting approval)
-- [ ] Workflow Planning
-- [ ] Application Design
-- [ ] Units Generation
+- [x] User Stories (approved)
+- [x] Workflow Planning (execution-plan.md created, awaiting approval)
+- [ ] Application Design - EXECUTE
+- [ ] Units Generation - EXECUTE
 
 ### 🟢 CONSTRUCTION PHASE
-- [ ] (to be determined in Workflow Planning)
+- [ ] Functional Design - EXECUTE (every unit)
+- [ ] NFR Requirements - EXECUTE (units with LLM, fetching, auth or upload work)
+- [ ] NFR Design - EXECUTE (same units)
+- [ ] Infrastructure Design - SKIP
+- [ ] Code Generation - EXECUTE
+- [ ] Build and Test - EXECUTE
 
 ### 🟡 OPERATIONS PHASE
-- [ ] Operations (PLACEHOLDER)
+- [ ] Operations - PLACEHOLDER
+
+## Current Status
+- **Lifecycle Phase**: INCEPTION
+- **Current Stage**: Workflow Planning (awaiting approval)
+- **Next Stage**: Application Design
+- **Status**: Awaiting user approval of execution-plan.md
