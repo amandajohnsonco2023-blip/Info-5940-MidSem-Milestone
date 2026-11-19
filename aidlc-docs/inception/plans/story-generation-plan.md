@@ -137,6 +137,22 @@ D) Other (please describe after [Answer]: tag below)
 
 ---
 
+## Answer Summary (validated, no contradictions or ambiguities found)
+
+| Q | Answer | Effect on generation |
+|---|---|---|
+| 1 | A | One epic per feature area, E1 to E10 (FR-1 to FR-10); each story tagged with its persona(s) |
+| 2 | B | Four personas: Student contributor, Student studier, Instructor (professor), TA |
+| 3 | A | Short personas: role, goals, frustrations, permissions |
+| 4 | B | Medium stories, one per user goal: about 30-40 stories |
+| 5 | C | Given/When/Then for main and edge scenarios, plus a checklist for simple rules |
+| 6 | A | MoSCoW priority on every story |
+| 7 | A | LLM failure and grounding behavior written as acceptance criteria inside the feature stories; no separate epic |
+| 8 | A | End-user stories only; no Team admin stories (FR-1.3 seeding and the NFR-5 evaluation script stay as requirements) |
+| 9 | B | Key journey: a student joins an existing course (created by a seeded instructor), uploads notes, and studies with cited chat. Stories on this path are marked **[Key journey]** and are Must. |
+
+---
+
 ## Part B: Generation Checklist
 
 I will run these steps after the answers are validated and you approve this plan. Each box is marked `[x]` as soon as its step is done.
@@ -151,7 +167,7 @@ I will run these steps after the answers are validated and you approve this plan
 - [ ] 2.3 Add a persona-to-epic map, filled in after Step 3
 
 ### Step 3: Stories (`stories.md`)
-- [ ] 3.1 Write the organizing structure chosen in Q1, with the story ID scheme `US-<epic>.<n>`
+- [ ] 3.1 Write the epic structure E1 to E10 (Q1: A), with the story ID scheme `US-<epic>.<n>`
 - [ ] 3.2 Accounts and authentication stories (FR-1)
 - [ ] 3.3 Course and membership stories, including course requests (FR-2)
 - [ ] 3.4 Course-website structure stories, including exams and the no-schedule case (FR-3)
@@ -162,8 +178,8 @@ I will run these steps after the answers are validated and you approve this plan
 - [ ] 3.9 Conflict display and resolution stories (FR-8)
 - [ ] 3.10 Instructor coverage view and "Analyze course" stories (FR-9)
 - [ ] 3.11 Cited chat stories (FR-10)
-- [ ] 3.12 LLM failure and grounding coverage, as chosen in Q7
-- [ ] 3.13 Team admin stories, if chosen in Q8
+- [ ] 3.12 LLM failure and grounding coverage: check that the relevant stories in E7, E8, E9 and E10 (and the lecture suggestion in E4 and site parsing in E3) have failure criteria, per Q7: A
+- [-] 3.13 Team admin stories: SKIPPED per Q8: A
 - [ ] 3.14 Apply prioritization (Q6) and mark the key-journey stories (Q9)
 
 ### Step 4: Quality Checks
