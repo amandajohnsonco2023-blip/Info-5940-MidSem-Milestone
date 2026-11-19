@@ -5,7 +5,7 @@
 - **Project Type**: Greenfield
 - **Start Date**: 2026-11-19T17:32:00Z
 - **Current Phase**: INCEPTION
-- **Current Stage**: INCEPTION - Workflow Planning (awaiting approval)
+- **Current Stage**: INCEPTION complete (paused before CONSTRUCTION for the mid-semester milestone)
 
 ## Input Documents
 - `README.md` - problem, planned LLM integration, scope, team
@@ -43,9 +43,9 @@
 - [-] Reverse Engineering (SKIPPED - greenfield)
 - [x] Requirements Analysis (approved)
 - [x] User Stories (approved)
-- [x] Workflow Planning (execution-plan.md created, awaiting approval)
-- [ ] Application Design - EXECUTE
-- [ ] Units Generation - EXECUTE
+- [x] Workflow Planning (approved)
+- [x] Application Design (approved)
+- [x] Units Generation (approved)
 
 ### 🟢 CONSTRUCTION PHASE
 - [ ] Functional Design - EXECUTE (every unit)
@@ -59,7 +59,8 @@
 - [ ] Operations - PLACEHOLDER
 
 ## Current Status
-- **Lifecycle Phase**: INCEPTION
-- **Current Stage**: Workflow Planning (awaiting approval)
-- **Next Stage**: Application Design
-- **Status**: Awaiting user approval of execution-plan.md
+- **Lifecycle Phase**: INCEPTION (complete)
+- **Current Stage**: INCEPTION complete
+- **Next Stage**: CONSTRUCTION - Functional Design for each unit (deferred until after the mid-semester milestone; unit owners to be assigned first)
+- **Status**: All INCEPTION stages approved. Paused for the mid-semester milestone.
+- **Milestone note**: The team stops after INCEPTION for the mid-semester milestone; CONSTRUCTION is deferred until after the midpoint.

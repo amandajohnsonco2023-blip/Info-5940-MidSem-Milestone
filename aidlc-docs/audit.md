@@ -141,3 +141,75 @@
 **Context**: INCEPTION - Workflow Planning, Steps 1-9 (awaiting approval)
 
 ---
+
+## Workflow Planning - User Approval
+**Timestamp**: 2026-11-19T20:07:00Z
+**User Input**: "Approve"
+**AI Response**: "Execution plan approved. Marked Workflow Planning complete. Noted team decision (stated by user before approval): work stops after INCEPTION for the mid-semester milestone; CONSTRUCTION stages in the plan are deferred until after the midpoint, not removed. Started Application Design."
+**Context**: INCEPTION - Workflow Planning complete. Inception continued by team member Anushka Vijay (asv48), owner of Application Design and Units Generation.
+
+---
+
+## Application Design - Plan and Questions Issued
+**Timestamp**: 2026-11-19T20:08:00Z
+**User Input**: (none)
+**AI Response**: "Analyzed requirements.md (FR-1..FR-10, NFR-1..NFR-7) and stories.md (39 stories, E1-E10). Created aidlc-docs/inception/plans/application-design-plan.md with 14 questions across component identification (package layout, shared agent loop, website import), component methods (citations, conflict decisions, tool definitions, model-client interface), service layer (layering, long-running jobs, weight computation, upload processing), and dependencies/patterns (embedding loading, permission and anonymity enforcement, entity sketch), plus a Part B generation checklist. Awaiting answers (GATE)."
+**Context**: INCEPTION - Application Design, Steps 1-6
+
+---
+
+## Application Design - Answers Received
+**Timestamp**: 2026-11-19T20:20:00Z
+**User Input**: User asked: "ok for applciation design plan can you prompt me with each question and I can answer with you". Questions were presented interactively in chat and answered: Q1 "C (Hybrid)"; Q2 "A (One shared loop)"; Q3 "A (Fixed pipeline)"; Q4 "A (Passage IDs + code check)"; Q5 "A (LLM groups, code counts)"; Q6 "A (Function + Pydantic model)"; Q7 "A (One 3-method protocol)"; Q8 "A (Routes -> services -> session)"; Q9 "A (Background + job table + polling)"; Q10 "A (Recompute on change, store)"; Q11 "C (Split)"; Q12 "A (Load per query)"; Q13 "A (Both layers)"; Q14 "A (Sketch entities here)".
+**AI Response**: "Recorded answers in the [Answer]: tags of application-design-plan.md and added an Answer Summary and Analysis section. Step 8 analysis: no vague, combined or contradictory answers; no follow-up questions needed. Noted departure: Q4 replaces the cite_source tool listed in FR-7.2 with code-validated passage markers (FR-7.3/FR-10.2 behavior unchanged)."
+**Context**: INCEPTION - Application Design, Steps 7-9
+
+---
+
+## Application Design - Artifacts Generated and Approval Prompt
+**Timestamp**: 2026-11-19T20:35:00Z
+**User Input**: (none)
+**AI Response**: "Generated aidlc-docs/inception/application-design/components.md (16 components C1-C16, package layout, entity sketch with owners), component-methods.md (method signatures per component), services.md (service catalogue, orchestration flows A-F, cross-cutting patterns), component-dependency.md (service-level dependency matrix with no cycles, layer diagram, guide and upload data flows, implied build order), and application-design.md (consolidated summary, design decisions AD-1 to AD-16, agent profiles, requirements coverage, validation, extension compliance). Added tool get_resolved_conflicts (FR-8.5). Marked Part B checklist complete. Presented completion message with options: Request Changes / Approve & Continue to Units Generation."
+**Context**: INCEPTION - Application Design, Steps 10-12 (awaiting approval)
+
+---
+
+## Application Design - User Approval
+**Timestamp**: 2026-11-19T21:36:00Z
+**User Input**: "Approve Application Design. ... I approve"
+**AI Response**: "Application design approved. Marked Application Design complete. Started Units Generation Part 1 (Planning)."
+**Context**: INCEPTION - Application Design complete (Steps 13-15)
+
+---
+
+## Units Generation - Plan, Questions and Answers
+**Timestamp**: 2026-11-19T21:40:00Z
+**User Input**: "yes let's go through this similarly". Questions presented interactively in chat and answered: Q1 "A (5 domain units)"; Q2 "A (U3 Trust & Retrieval)"; Q3 "A (Assign all, Must first)"; Q4 "A (Contracts first, then parallel)"; Q5 "A (Walking skeleton first)"; Q6 "A (Each unit owns its tables)"; Q7 "B (TBD, assign at team meeting)"; Q8 "A (Short branches + reviewed PRs)"; Q9 "A (U5 owner; units own their own tests)"; Q10 "A (One repo, one app)"; Q11 "A (U1, U2, U4, U5)".
+**AI Response**: "Created aidlc-docs/inception/plans/unit-of-work-plan.md (11 questions across story grouping, business domain, dependencies, team alignment, technical considerations and code organization, plus Part B checklist). Recorded answers in [Answer]: tags and added an Answer Summary and Analysis. Step 7 analysis: no ambiguities; no follow-up questions needed. Approval prompt: 'Unit of work plan complete. Review the plan in aidlc-docs/inception/plans/unit-of-work-plan.md. Ready to proceed to generation?'"
+**Context**: INCEPTION - Units Generation, Part 1 Planning, Steps 1-9 (awaiting plan approval)
+
+---
+
+## Units Generation - Plan Approval
+**Timestamp**: 2026-11-19T23:06:00Z
+**User Input**: "approve"
+**AI Response**: "Unit of work plan approved. Marked Units Generation Part 1 (Planning) complete. Started Part 2 (Generation) per unit-of-work-plan.md Part B."
+**Context**: INCEPTION - Units Generation, Part 1 Steps 10-11; Part 2 started
+
+---
+
+## Units Generation - Artifacts Generated and Approval Prompt
+**Timestamp**: 2026-11-19T23:15:00Z
+**User Input**: (none)
+**AI Response**: "Generated aidlc-docs/inception/application-design/unit-of-work.md (5 units U1-U5 with components, packages, owned tables, M0 contracts, build order by priority, testing focus, owner TBD; code organization strategy; Construction stage readiness per unit), unit-of-work-dependency.md (contract vs full-implementation dependency matrix, no blocking cycles, M0 contracts per unit, milestones M0-M3 plus Build and Test, integration practice, shared resources), and unit-of-work-story-map.md (all 39 stories mapped to one primary unit with contributing units; totals 23 Must / 13 Should / 3 Could; validated titles and priorities against stories.md). Marked all Part B checklist items complete. Presented completion message with options: Request Changes / Approve & Continue to CONSTRUCTION PHASE (deferred until after the mid-semester milestone)."
+**Context**: INCEPTION - Units Generation, Part 2 Steps 12-16 (awaiting approval)
+
+---
+
+## Units Generation - User Approval
+**Timestamp**: 2026-11-19T23:08:00Z
+**User Input**: "ok i approve the units"
+**AI Response**: "Units approved. Marked Units Generation complete and INCEPTION phase complete. Per the team's decision, CONSTRUCTION is deferred until after the mid-semester milestone; unit owners (U1-U5) are to be assigned at the next team meeting before Functional Design begins."
+**Context**: INCEPTION - Units Generation complete (Steps 17-19); INCEPTION phase complete
+
+---
