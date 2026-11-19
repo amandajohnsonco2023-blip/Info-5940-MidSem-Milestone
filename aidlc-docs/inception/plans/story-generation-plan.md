@@ -33,7 +33,7 @@ D) Persona-based: one section per persona
 
 E) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: A
 
 ## Question 2
 Which personas should be written up?
@@ -46,7 +46,7 @@ C) As B, plus a "Team admin" persona for the developer who seeds instructor acco
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: B
 
 ## Question 3
 How detailed should each persona be?
@@ -57,7 +57,7 @@ B) Richer: as A, plus a named example person, a typical week, technical comfort,
 
 C) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: A
 
 ## Question 4
 How large should stories be?
@@ -70,7 +70,7 @@ C) Coarse: one story per feature area, with detailed acceptance criteria. About 
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: B
 
 ## Question 5
 What format should acceptance criteria use?
@@ -83,7 +83,7 @@ C) Given / When / Then for main and edge scenarios, plus a short checklist for s
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: C
 
 ## Question 6
 Should stories be prioritized?
@@ -96,7 +96,7 @@ C) No; everything in requirements.md is in scope, so stories are not prioritized
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: A
 
 ## Question 7
 How should LLM-specific and failure behavior be covered?
@@ -109,7 +109,7 @@ C) Both: main failure criteria inside feature stories, plus a small cross-cuttin
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: A
 
 ## Question 8
 Should the stories also cover team- and developer-facing work that is not used through the web UI?
@@ -120,7 +120,7 @@ B) Yes, include a few "Team admin" stories: seed instructor accounts (FR-1.3), r
 
 C) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: A
 
 ## Question 9
 For the demo, what is the single most important end-to-end journey? Its stories will be marked so the team builds and tests that path first.
@@ -133,7 +133,7 @@ C) Instructor reviews coverage, resolves a conflict, and the regenerated guide c
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: B
 
 ---
 
