@@ -37,8 +37,6 @@
 | ChromaDB, PostgreSQL | One more datastore or server to set up and keep in sync, with no benefit at our data size | SQLite, with similarity computed in numpy |
 | Flask, Django, Streamlit | FastAPI is the chosen framework; Streamlit handles logins, roles, and multi-page navigation poorly | FastAPI with Jinja2 and HTMX |
 | React, npm-based build tooling | Introduces a second language and a build pipeline we don't have time for | Jinja2 templates with HTMX |
-| `eval()`, `exec()`, `pickle` on user or model content | Opens the door to running arbitrary code | Explicit parsing or JSON |
-| Jinja2's `\|safe` filter on notes or model output | Allows injected HTML/JavaScript (XSS) | Render Markdown via markdown-it-py with raw HTML turned off, and leave autoescaping on |
 | pip, poetry, conda | Mixing installers leads to inconsistent environments | uv |
 
 ## 6. Security Essentials
