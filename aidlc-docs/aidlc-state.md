@@ -5,7 +5,7 @@
 - **Project Type**: Greenfield
 - **Start Date**: 2026-11-19T17:32:00Z
 - **Current Phase**: INCEPTION
-- **Current Stage**: INCEPTION - Requirements Analysis (awaiting answers to clarifying questions)
+- **Current Stage**: INCEPTION - Requirements Analysis (awaiting answers to clarification questions, round 1)
 
 ## Input Documents
 - `README.md` - problem, planned LLM integration, scope, team
@@ -28,15 +28,15 @@
 ## Extension Configuration
 | Extension | Enabled | Decided At |
 |---|---|---|
-| Security Baseline | Pending | Requirements Analysis |
-| Resiliency Baseline | Pending | Requirements Analysis |
-| Property-Based Testing | Pending | Requirements Analysis |
+| Security Baseline | No | Requirements Analysis |
+| Resiliency Baseline | No | Requirements Analysis |
+| Property-Based Testing | Yes (full enforcement, PBT-01 to PBT-10) | Requirements Analysis |
 
 ## Stage Progress
 ### 🔵 INCEPTION PHASE
 - [x] Workspace Detection
 - [-] Reverse Engineering (SKIPPED - greenfield)
-- [ ] Requirements Analysis (IN PROGRESS - questions issued)
+- [ ] Requirements Analysis (IN PROGRESS - answers received, clarification round 1 issued)
 - [ ] User Stories
 - [ ] Workflow Planning
 - [ ] Application Design
