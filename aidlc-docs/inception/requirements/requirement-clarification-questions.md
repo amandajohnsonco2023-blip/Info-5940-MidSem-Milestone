@@ -20,7 +20,7 @@ C) Gemini as the primary provider, behind a small model interface so a local Oll
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: A
 
 ---
 
@@ -38,7 +38,7 @@ C) No separate upload: "professor documents" means the lecture PDFs and slides f
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: B
 
 ### Clarification Question 3
 When a student note disagrees with professor material, what should the study guide do?
@@ -51,7 +51,7 @@ C) Treat it like any other disagreement: show both versions, but mark the profes
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: C
 
 ---
 
@@ -72,7 +72,7 @@ C) Self-declared at sign-up, but the course page shows the instructor names list
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: B
 
 ### Clarification Question 5
 Q4 also says "students can request courses to instructors." What should that look like?
@@ -85,7 +85,7 @@ C) A student can create a "pending" course page and start uploading notes. An in
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: B
 
 ---
 
@@ -103,7 +103,7 @@ C) As B, and the course owner can still add, edit or delete lectures by hand in 
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: A
 
 ---
 
@@ -121,7 +121,7 @@ C) Lecture tagging is optional, and untagged notes only appear as general source
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: C
 
 ---
 
@@ -139,7 +139,7 @@ B) Also feed it back into the note weight: notes whose content often agrees with
 
 C) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: B
 
 ### Clarification Question 9
 What is the order of precedence when sources disagree? (This combines Q1, Q11, Q12 and Q13.)
@@ -152,7 +152,7 @@ C) Professor material > majority of notes > instructor-endorsed note > upvotes (
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: B
 
 ---
 
@@ -170,7 +170,7 @@ C) It appears only to instructors, in the coverage view. Students see just the m
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: B
 
 ---
 
@@ -186,7 +186,7 @@ B) Only labeling: saved guides show the next upcoming exam date from the site, b
 
 C) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: A
 
 ---
 
@@ -212,4 +212,4 @@ B) No. Drop the security essentials as well (not recommended: the app handles pa
 
 C) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: A
