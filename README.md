@@ -34,3 +34,4 @@ To keep the project achievable, we are deliberately leaving out features that ad
 
 ## Collaboration Plan
 
+Our team will meet twice a week: one in-person working session on campus each week, used for AI-DLC sessions where we answer the agent's questions and review documents together, and one shorter online check-in over Zoom to review progress and plan next steps. Between meetings we will communicate in a shared imessage group chat. During Inception, one member runs the coding agent and commits changes while everyone takes part in decisions during shared sessions. During Construction, we will divide units of work among members, work on separate branches, and merge through pull requests that at least one other teammate reviews. We will rotate who leads discussion so that both product and technical decisions involve the whole team.
