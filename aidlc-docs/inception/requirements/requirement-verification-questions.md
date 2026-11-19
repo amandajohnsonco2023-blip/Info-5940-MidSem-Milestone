@@ -19,7 +19,7 @@ C) Gemini as the primary provider, behind a model interface so a local Ollama mo
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: D Primary source is professor-uploaded documents, secondary (fallback) to student-uploaded documents.
 
 ---
 
@@ -36,7 +36,7 @@ C) Instructor role is assigned by an existing instructor of the course from a me
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: B
 
 ## Question 3
 How does a student join an existing course?
@@ -49,7 +49,7 @@ C) Request and approve: users request to join and an instructor approves
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: B
 
 ## Question 4
 Can a student create a course page, or only instructors? (Vision.md says "an instructor or student enters the URL".)
@@ -62,7 +62,7 @@ C) Anyone can create a course, but a student-created course has no instructor un
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: B, students can request courses to instructors, instructor roles are assigned via public posted professor job titles online for all currently offered courses.
 
 ---
 
@@ -79,7 +79,7 @@ C) Option B, and also download linked lecture PDFs or slides so their text is av
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: C
 
 ## Question 6
 What should happen when the agent cannot find a clear schedule on the course site (Vision.md open question 9)?
@@ -92,7 +92,7 @@ C) Both A and B
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: No schedule if notes don't offer, describe limitation.
 
 ---
 
@@ -109,7 +109,7 @@ C) Assignment happens per passage: the system proposes a lecture for each sectio
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: D, doesn't have to tag by lecture
 
 ## Question 8
 Who can see uploaded notes, and can uploaders hide their name (Vision.md open question 7)?
@@ -122,7 +122,7 @@ C) All course members see all notes; uploader names are always hidden from stude
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: B
 
 ## Question 9
 What can an uploader do with a note after uploading it?
@@ -135,7 +135,7 @@ C) Delete their own note, or replace its file with a new version
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: C, with a "last updated tab"
 
 ---
 
@@ -152,7 +152,7 @@ C) A single "helpful" upvote (no downvotes)
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: C
 
 ## Question 11
 How should endorsements and ratings combine into a note's quality weight (Vision.md open question 1)?
@@ -167,7 +167,7 @@ D) Leave the exact formula to Functional Design, but it must be deterministic co
 
 E) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: B plus LLM reference on cross-reference with other uploaded content, with commonly found information being more likely to be correct
 
 ## Question 12
 What should the product do when a course has no endorsements (Vision.md open question 6)?
@@ -180,7 +180,7 @@ C) As A, and also let students mark a note as "matches the posted lecture slides
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: C
 
 ---
 
@@ -197,7 +197,7 @@ C) As B, and users or instructors can dismiss a flagged conflict as "not a real 
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: Combination of majority and LLM, option A, flagged to instructor
 
 ## Question 14
 What should citations point to, and how are they displayed (Vision.md open question 5)?
@@ -210,7 +210,7 @@ C) Line-range level: the citation names exact line numbers or page numbers insid
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: A
 
 ## Question 15
 Should generated study guides be saved?
@@ -223,7 +223,7 @@ C) Yes, with version history so users can compare a regenerated guide with earli
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: C (tied to exam schedule if available)
 
 ## Question 16
 Should grounded-chat conversations be saved?
@@ -234,7 +234,7 @@ B) Yes, each user's chat history per course is saved and visible only to that us
 
 C) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: B
 
 ## Question 17
 Where are conflicts shown in the instructor coverage view (MVP feature 8) coming from?
@@ -247,7 +247,7 @@ C) Both: saved from generated guides, and refreshable by an instructor-run analy
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: B
 
 ---
 
@@ -264,7 +264,7 @@ C) Several minutes is fine; run as a background job and show the guide when read
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: B
 
 ## Question 19
 What data size should the MVP be designed and tested for?
@@ -275,7 +275,7 @@ B) Small class scale: up to about 100 users and 500 notes per course
 
 C) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: A
 
 ## Question 20
 How will the team evaluate guide quality (Vision.md open question 8)?
@@ -288,7 +288,7 @@ C) As B, plus fixed recorded model responses so the agent loop itself is covered
 
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: B
 
 ---
 
@@ -305,7 +305,7 @@ B) No — skip all SECURITY rules (suitable for PoCs, prototypes, and experiment
 
 X) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: B
 
 ## Question 22: Resiliency Extensions
 Should the resiliency baseline be applied to this project?
@@ -322,7 +322,7 @@ B) No — skip the resiliency baseline (suitable for PoCs, prototypes, and exper
 
 X) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: B
 
 ## Question 23: Property-Based Testing Extension
 Should property-based testing (PBT) rules be enforced for this project?
@@ -335,4 +335,4 @@ C) No — skip all PBT rules (suitable for simple CRUD applications, UI-only pro
 
 X) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: A
