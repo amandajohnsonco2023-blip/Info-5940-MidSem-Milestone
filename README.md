@@ -12,7 +12,7 @@ Ram Vaidya (rmv42),
 Namra Shah (nns33),
 Anushka Vijay (asv48)
 
-**Coding agent:** [Claude Code] <!-- TODO: list every agent your team uses -->
+**Coding agent:** Claude Code
 **AI-DLC version:** v1.0.1
 
 ## Problem and Why an LLM Fits It
