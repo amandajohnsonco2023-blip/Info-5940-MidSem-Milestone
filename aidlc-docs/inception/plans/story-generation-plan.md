@@ -158,38 +158,38 @@ D) Other (please describe after [Answer]: tag below)
 I will run these steps after the answers are validated and you approve this plan. Each box is marked `[x]` as soon as its step is done.
 
 ### Step 1: Prepare
-- [ ] 1.1 Re-read requirements.md, Vision.md and the answers above
-- [ ] 1.2 Create the `aidlc-docs/inception/user-stories/` directory
+- [x] 1.1 Re-read requirements.md, Vision.md and the answers above
+- [x] 1.2 Create the `aidlc-docs/inception/user-stories/` directory
 
 ### Step 2: Personas (`personas.md`)
-- [ ] 2.1 Write each persona chosen in Q2, at the detail level chosen in Q3
-- [ ] 2.2 For each persona, list its permissions, linked to requirements.md section 2
-- [ ] 2.3 Add a persona-to-epic map, filled in after Step 3
+- [x] 2.1 Write each persona chosen in Q2, at the detail level chosen in Q3
+- [x] 2.2 For each persona, list its permissions, linked to requirements.md section 2
+- [x] 2.3 Add a persona-to-epic map, filled in after Step 3
 
 ### Step 3: Stories (`stories.md`)
-- [ ] 3.1 Write the epic structure E1 to E10 (Q1: A), with the story ID scheme `US-<epic>.<n>`
-- [ ] 3.2 Accounts and authentication stories (FR-1)
-- [ ] 3.3 Course and membership stories, including course requests (FR-2)
-- [ ] 3.4 Course-website structure stories, including exams and the no-schedule case (FR-3)
-- [ ] 3.5 Notes and professor-material upload stories, including tagging, anonymity, and delete/replace (FR-4)
-- [ ] 3.6 Upvote, "matches slides" and endorsement stories (FR-5)
-- [ ] 3.7 Ranking-transparency story for the "How sources are ranked" page (FR-6)
-- [ ] 3.8 Study-guide stories, including scope, citations, gaps, versions and progress (FR-7)
-- [ ] 3.9 Conflict display and resolution stories (FR-8)
-- [ ] 3.10 Instructor coverage view and "Analyze course" stories (FR-9)
-- [ ] 3.11 Cited chat stories (FR-10)
-- [ ] 3.12 LLM failure and grounding coverage: check that the relevant stories in E7, E8, E9 and E10 (and the lecture suggestion in E4 and site parsing in E3) have failure criteria, per Q7: A
+- [x] 3.1 Write the epic structure E1 to E10 (Q1: A), with the story ID scheme `US-<epic>.<n>`
+- [x] 3.2 Accounts and authentication stories (FR-1)
+- [x] 3.3 Course and membership stories, including course requests (FR-2)
+- [x] 3.4 Course-website structure stories, including exams and the no-schedule case (FR-3)
+- [x] 3.5 Notes and professor-material upload stories, including tagging, anonymity, and delete/replace (FR-4)
+- [x] 3.6 Upvote, "matches slides" and endorsement stories (FR-5)
+- [x] 3.7 Ranking-transparency story for the "How sources are ranked" page (FR-6)
+- [x] 3.8 Study-guide stories, including scope, citations, gaps, versions and progress (FR-7)
+- [x] 3.9 Conflict display and resolution stories (FR-8)
+- [x] 3.10 Instructor coverage view and "Analyze course" stories (FR-9)
+- [x] 3.11 Cited chat stories (FR-10)
+- [x] 3.12 LLM failure and grounding coverage: check that the relevant stories in E7, E8, E9 and E10 (and the lecture suggestion in E4 and site parsing in E3) have failure criteria, per Q7: A
 - [-] 3.13 Team admin stories: SKIPPED per Q8: A
-- [ ] 3.14 Apply prioritization (Q6) and mark the key-journey stories (Q9)
+- [x] 3.14 Apply prioritization (Q6) and mark the key-journey stories (Q9)
 
 ### Step 4: Quality Checks
-- [ ] 4.1 Every story uses "As a <persona>, I want <goal>, so that <benefit>"
-- [ ] 4.2 Every story has acceptance criteria in the format chosen in Q5
-- [ ] 4.3 INVEST check (Independent, Negotiable, Valuable, Estimable, Small, Testable); split or merge stories that fail it
-- [ ] 4.4 Traceability table: each story maps to FR/NFR IDs, and every FR-1 to FR-10 is covered by at least one story
-- [ ] 4.5 Persona-to-story mapping complete (personas.md 2.3)
-- [ ] 4.6 Validate markdown and any diagrams per content-validation.md
+- [x] 4.1 Every story uses "As a <persona>, I want <goal>, so that <benefit>"
+- [x] 4.2 Every story has acceptance criteria in the format chosen in Q5
+- [x] 4.3 INVEST check (Independent, Negotiable, Valuable, Estimable, Small, Testable); split or merge stories that fail it
+- [x] 4.4 Traceability table: each story maps to FR/NFR IDs, and every FR-1 to FR-10 is covered by at least one story
+- [x] 4.5 Persona-to-story mapping complete (personas.md 2.3)
+- [x] 4.6 Validate markdown and any diagrams per content-validation.md
 
 ### Step 5: Wrap-Up
-- [ ] 5.1 Update aidlc-state.md and audit.md
-- [ ] 5.2 Present the User Stories completion message for approval
+- [x] 5.1 Update aidlc-state.md and audit.md
+- [x] 5.2 Present the User Stories completion message for approval
