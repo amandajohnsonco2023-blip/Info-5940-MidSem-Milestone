@@ -1,7 +1,5 @@
 # Margins: Vision Document
 
-> **Alignment note:** This document was updated on November 23, 2026 to match the decisions made during AI-DLC Inception, recorded in `aidlc-docs/inception/requirements/requirements.md` and `aidlc-docs/inception/user-stories/stories.md`. Where the two differ, `requirements.md` wins. The **Ref.** column in the MVP feature table gives the IDs that `requirements.md` uses: **V-n** for the original MVP feature n, and **FR-n** for its functional requirements.
-
 ## Executive Summary
 
 Margins is a locally run web platform where undergraduate students in the same lecture-based course pool their notes, and an AI agent turns that shared pool into a study guide grounded in the course itself. The agent reads every set of notes uploaded to a course page, along with any slides and handouts the instructor uploads, fetches the course's public website to compare the notes against the syllabus and schedule, and writes a study guide that merges overlapping notes, flags disagreements, cites its sources, and lists lectures nobody has covered. When sources disagree, Margins trusts them in a fixed order: instructor material first, then instructor-endorsed notes, then what most notes say, then notes flagged as matching the slides, then upvotes. The same rules apply in a grounded chat that answers questions with citations. The expected outcome is that a student can go from a scattered pile of classmates' notes to one trustworthy, cited study guide in minutes instead of hours of manual reconciliation.
