@@ -27,6 +27,7 @@
 - **pytest** as the test runner
 - **pytest-cov**, target ≥ 80% on business logic
 - **ruff** for lint and style checks
+- **Hypothesis** for property-based tests (required by the AI-DLC Property-Based Testing extension)
 
 ## 5. Libraries and Services We Are Not Using
 
