@@ -182,8 +182,8 @@ At maturity, Margins would support many courses per university, many universitie
 | Phase | Focus | Timeframe |
 |-------|-------|-----------|
 | MVP | Course pages and join codes, course-site outline and exams, notes and instructor material upload, upvotes and endorsements, source weighting, cited study guides, coverage report, conflict flagging and resolution, grounded chat, instructor coverage view | December 16, 2026 |
-| Phase 2 | Handwriting recognition, comments, practice questions and flashcards, scheduled site syncing | TBD |
-| Phase 3 | University SSO, LMS integration, multi-course and multi-university support, hosting | TBD |
+| Phase 2 | Handwriting recognition, comments, practice questions and flashcards, scheduled site syncing | After the course |
+| Phase 3 | University SSO, LMS integration, multi-course and multi-university support, hosting | After the course |
 
 ---
 
@@ -239,21 +239,21 @@ Priorities follow the approved user stories: **Must** is needed for the MVP loop
 | University single sign-on, production-grade authentication, and automatic verification of instructor identity | Requires university integration; local accounts and team-seeded instructor accounts are enough to demo roles | Phase 3 |
 | Integration with Canvas or other systems that require login | Requires credentials and institutional approval; we demo with public course websites | Phase 3 |
 | Handwriting recognition, photographed or scanned notes | Adds an unreliable extraction step before the core pipeline; typed notes prove the concept | Phase 2 |
-| Audio or video lecture transcription | Large new input type unrelated to the core reconciliation problem | TBD |
+| Audio or video lecture transcription | Large new input type unrelated to the core reconciliation problem | Not planned |
 | Continuous or scheduled syncing of course websites | Fetching on add and on request covers the demo | Phase 2 |
-| Editing the lecture outline by hand | The course website is the single source of the outline; wrong outlines are fixed by refreshing | TBD |
-| Inferring a lecture schedule from notes | Decided against in Requirements Analysis (CQ6); courses without a schedule run in topic-only mode instead | TBD |
+| Editing the lecture outline by hand | The course website is the single source of the outline; wrong outlines are fixed by refreshing | Not planned |
+| Inferring a lecture schedule from notes | Decided against in Requirements Analysis (CQ6); courses without a schedule run in topic-only mode instead | Not planned |
 | Comments and discussion threads | Adds web-development work without strengthening the core product | Phase 2 |
-| Downvotes | Decided against in Requirements Analysis (Q10); upvotes, the slides flag, and endorsements give enough signal | TBD |
-| Following users | Social feature unrelated to studying from notes | TBD |
-| Notifications and email | Not needed for a local demo | TBD |
-| Real-time co-editing of notes | High complexity; notes are uploaded as finished documents | TBD |
+| Downvotes | Decided against in Requirements Analysis (Q10); upvotes, the slides flag, and endorsements give enough signal | Not planned |
+| Following users | Social feature unrelated to studying from notes | Not planned |
+| Notifications and email | Not needed for a local demo | Not planned |
+| Real-time co-editing of notes | High complexity; notes are uploaded as finished documents | Not planned |
 | Practice questions, flashcards, spaced repetition | Valuable, but builds on a trustworthy guide, which must come first | Phase 2 |
 | Study guides spanning multiple courses, cross-course search | MVP is designed around one course at a time | Phase 3 |
-| Mobile apps | Web app on laptops is enough for the demo | TBD |
+| Mobile apps | Web app on laptops is enough for the demo | Not planned |
 | Hosting and cloud deployment | The product runs locally on team laptops | Phase 3 |
-| Plagiarism or academic-integrity checks on uploads | Policy-heavy and outside the core problem | TBD |
-| Training or fine-tuning models | Not needed; prompting and retrieval are sufficient | TBD |
+| Plagiarism or academic-integrity checks on uploads | Policy-heavy and outside the core problem | Not planned |
+| Training or fine-tuning models | Not needed; prompting and retrieval are sufficient | Not planned |
 
 ### MVP User Journeys
 
